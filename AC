@@ -33,23 +33,3 @@ circle.Filled = false
 		end
 		return closestPlayer
 	end
-
-Tool.Activated:Connect(function()
-    local Character = game:GetService("Players").LocalPlayer.Character
-    local Humanoid = Character:FindFirstChildOfClass("Humanoid")
-
-    		plr =  getClosestPlayerToCursor()
-            local A_1 = getgenv().command..tostring(plr.Character.Humanoid.DisplayName) local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
-            
-            local Swing = Instance.new('Animation');
-            Swing.AnimationId = "rbxassetid://3096047107";
-			local ld = game:GetService('Players').LocalPlayer.Character:FindFirstChildWhichIsA('Humanoid'):LoadAnimation(Swing)
-            ld:Play()
-			ld:AdjustSpeed(0.45)
-			wait(0.5)
-			ld:AdjustSpeed(0.25)
-			play(3475534419, true, true)--9125784450
-            wait(2.7)
-		    StopAudio()
-
-end)

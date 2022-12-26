@@ -1,7 +1,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ArcaneAw/boombox/main/AC", true))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ArcaneAw/iyedit/main/AC'))()
 
-function Tool()
+function Tool4()
 local Tool = Instance.new("Tool")
 Tool.RequiresHandle = false
 Tool.ToolTip = "Fling tool"
@@ -67,9 +67,9 @@ Tool.Parent = game:GetService("Players").LocalPlayer.Backpack
 end
 game:GetService('Players').LocalPlayer.Character:WaitForChild('FULLY_LOADED_CHAR');
 wait(1.5);
-Tool();
+Tool4();
 game:GetService('Players').LocalPlayer.CharacterAdded:Connect(function(v)
     v:WaitForChild('FULLY_LOADED_CHAR');
-    wait(2);
-    Tool();
+    wait(2.4);
+    Tool4();
 end)

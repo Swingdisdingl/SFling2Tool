@@ -1,7 +1,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ArcaneAw/boombox/main/AC", true))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ArcaneAw/iyedit/main/AC'))()
 
-function Tool4()
+function Tool3()
 local Tool = Instance.new("Tool")
 Tool.RequiresHandle = false
 Tool.ToolTip = "Fling tool"

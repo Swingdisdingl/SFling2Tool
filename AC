@@ -65,11 +65,3 @@ Tool.Activated:Connect(function()
 end)
 Tool.Parent = game:GetService("Players").LocalPlayer.Backpack
 end
-game:GetService('Players').LocalPlayer.Character:WaitForChild('FULLY_LOADED_CHAR');
-wait(1.5);
-Tool4();
-game:GetService('Players').LocalPlayer.CharacterAdded:Connect(function(v)
-    v:WaitForChild('FULLY_LOADED_CHAR');
-    wait(2.4);
-    Tool4();
-end)
